@@ -72,3 +72,9 @@ For your simplicity, I've create few options of testing:
 - Insomnia,  API client, which support WS colletions export. The exported collection is in "Testing" directory as well.
 - If you'd like, you can test the application from browser dev tools as well.
 
+Currently, there are 4 routes:
+-  Login
+-  UpdateResource
+-  SendGift
+-  GetPlayerBalance
+
