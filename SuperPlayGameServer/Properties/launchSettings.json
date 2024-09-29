@@ -2,13 +2,12 @@
   "profiles": {
     "http": {
       "commandName": "Project",
-      "launchBrowser": true,
-      "launchUrl": "swagger",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5094"
+      }
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -30,7 +29,7 @@
     "SuperPlayGameServer": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": false, // No need to launch a browser for WebSockets
+      "launchBrowser": false, 
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

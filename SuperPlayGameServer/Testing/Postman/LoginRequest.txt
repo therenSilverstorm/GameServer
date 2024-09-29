@@ -1,0 +1,6 @@
+{
+  "Command": "Login",
+  "Payload": {
+    "deviceId": "Alex321"
+  }
+}
