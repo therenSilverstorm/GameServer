@@ -59,7 +59,7 @@ After cloning the repo, open cmd in SuperPlayGameServer directory, and run follo
 
 
 # WebSocket Test
-To test the WebSocket communication, you can use any WebSocket client (e.g., Postman, browser dev tools). The WebSocket endpoint is:
+To test the WebSocket communication, you can use any WebSocket client (e.g., Postman, Insomnia, browser dev tools). The WebSocket endpoint is:
 
 ```ws://localhost:5000/ws```
 
