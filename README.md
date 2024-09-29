@@ -31,15 +31,15 @@ Flow Example: Sending a Gift
 The sender's resources are updated immediately, and the transaction is committed to the database.
 
 Core Design Concepts
-  -WebSocketRouter routes incoming messages based on their command type.
-  -Command Handlers process specific requests like Login or SendGift.
-  -PlayerState manages resources (coins, rolls) and handles updates in a safe, transactional manner.
-  -Gift Queuing ensures that offline players can still receive gifts when they log in.
+  - WebSocketRouter routes incoming messages based on their command type.
+  - Command Handlers process specific requests like Login or SendGift.
+  - PlayerState manages resources (coins, rolls) and handles updates in a safe, transactional manner.
+  - Gift Queuing ensures that offline players can still receive gifts when they log in.
 
 How it Works
-  -Login: Handles player authentication and resource initialization.
-  -SendGift: Updates the sender's balance immediately, queues the gift if the recipient is offline.
-  -UpdateResources: Allows players to update their resources like coins and rolls.
+  - Login: Handles player authentication and resource initialization.
+  - SendGift: Updates the sender's balance immediately, queues the gift if the recipient is offline.
+  - UpdateResources: Allows players to update their resources like coins and rolls.
 
 Technologies Used
 .NET 8: Backend framework.
