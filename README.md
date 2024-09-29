@@ -44,9 +44,37 @@ How it Works
   - Login: Handles player authentication and resource initialization.
   - SendGift: Updates the sender's balance immediately, queues the gift if the recipient is offline.
   - UpdateResources: Allows players to update their resources like coins and rolls.
+  - Upon servers graceful shutdown, logs out all users.
 
 Technologies Used
 .NET 8: Backend framework.
 SQLite: Lightweight database for persistence.
 WebSockets: Real-time communication.
+
+#  How to Run the Service
+After cloning the repo, open cmd in SuperPlayGameServer directory, and run following commands:
+
+```dotnet ef database update```
+
+
+```dotnet run```
+
+
+
+# WebSocket Test
+To test the WebSocket communication, you can use any WebSocket client (e.g., Postman, browser dev tools). The WebSocket endpoint is:
+
+```ws://localhost:5000/ws```
+
+Personally I tested everything with Postman, because didn't had enough time to create console application. 
+For your simplicity, I've create few options of testing:
+- Postman, but it doesn't support WS collection export feature, so I'm creating "Testing" directory in project, where I save json file with messages payload.
+- Insomnia,  API client, which support WS colletions export. The exported collection is in "Testing" directory as well.
+- If you'd like, you can test the application from browser dev tools as well.
+
+Currently, there are 4 routes:
+-  Login
+-  UpdateResource
+-  SendGift
+-  GetPlayerBalance
 
