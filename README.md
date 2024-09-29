@@ -44,6 +44,7 @@ How it Works
   - Login: Handles player authentication and resource initialization.
   - SendGift: Updates the sender's balance immediately, queues the gift if the recipient is offline.
   - UpdateResources: Allows players to update their resources like coins and rolls.
+  - Upon servers graceful shutdown, logs out all users.
 
 Technologies Used
 .NET 8: Backend framework.
