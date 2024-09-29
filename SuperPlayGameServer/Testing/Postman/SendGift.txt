@@ -1,0 +1,9 @@
+{
+  "Command": "SendGift",
+  "Payload": {
+    "senderPlayerId": "Alex1",
+    "recipientPlayerId": "Alex321",
+    "resourceType": "coins",
+    "resourceValue": 50
+  }
+}

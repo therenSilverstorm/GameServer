@@ -1,0 +1,8 @@
+{
+  "Command": "UpdateResources",
+  "Payload": {
+    "recipientPlayerId": "Alex1",
+    "resourceType": "coins",
+    "resourceValue": 500
+  }
+}
