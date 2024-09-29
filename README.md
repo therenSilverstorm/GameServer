@@ -51,7 +51,7 @@ Technologies Used
 SQLite: Lightweight database for persistence.
 WebSockets: Real-time communication.
 
-How to Run the Service
+#  How to Run the Service
 After cloning the repo, open cmd in SuperPlayGameServer directory, and run following commands:
 
 ```dotnet ef database update```
@@ -59,4 +59,16 @@ After cloning the repo, open cmd in SuperPlayGameServer directory, and run follo
 
 ```dotnet run```
 
+
+
+# WebSocket Test
+To test the WebSocket communication, you can use any WebSocket client (e.g., Postman, browser dev tools). The WebSocket endpoint is:
+
+```ws://localhost:5000/ws```
+
+Personally I tested everything with Postman, because didn't had enough time to create console application. 
+For your simplicity, I've create few options of testing:
+  1)Postman, but it doesn't support WS collection export feature, so I'm creating "Testing" directory in project, where I save json file with messages payload.
+  2)Insomnia,  API client, which support WS colletions export. The exported collection is in "Testing" directory as well.
+  3)If you'd like, you can test the application from browser dev tools as well.
 
