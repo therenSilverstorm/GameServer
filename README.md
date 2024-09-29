@@ -10,22 +10,19 @@ Key Features
   - Gift queuing for offline players, with automatic delivery when they log back in.
   - Player resource management (e.g., coins, rolls) with transactional integrity.
   - Clean architecture following SOLID principles for maintainability.
-  - Architecture Overview
-  - Main Components
-  - WebSocket Middleware
-  - Manages WebSocket connections and routes incoming messages to the correct command handlers.
 
-Command Handlers
-Implement specific logic for each type of action (e.g., Login, SendGift, UpdateResources).
+# Architecture Overview
+Main Components
+  - WebSocket Middleware: Manages WebSocket connections and routes incoming messages to the correct command handlers.
+  
+  - Command Handlers: Implement specific logic for each type of action (e.g., Login, SendGift, UpdateResources).
 
-Player Service
-Handles player-related operations such as logging in, updating resources, and managing player state.
+  - Player Service: Handles player-related operations such as logging in, updating resources, and managing player state.
 
-Repositories (Data Access Layer)
-Interface with the SQLite database to store and retrieve player states and queued gifts.
+  - Repositories (Data Access Layer): Interface with the SQLite database to store and retrieve player states and queued gifts.
 
-Database
-Stores player data and queued gifts, ensuring persistence and consistency with transaction handling.
+  - Database: Stores player data and queued gifts, ensuring persistence and consistency with transaction handling.
+
 
 Flow Example: Sending a Gift
 1)The client sends a WebSocket message with a SendGift command.
@@ -46,7 +43,7 @@ How it Works
   - UpdateResources: Allows players to update their resources like coins and rolls.
   - Upon servers graceful shutdown, logs out all users.
 
-Technologies Used
+# Technologies Used
 .NET 8: Backend framework.
 SQLite: Lightweight database for persistence.
 WebSockets: Real-time communication.
