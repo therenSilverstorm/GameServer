@@ -51,3 +51,9 @@ Technologies Used
 SQLite: Lightweight database for persistence.
 WebSockets: Real-time communication.
 
+How to Run the Service
+After cloning the repo, open cmd in SuperPlayGameServer directory, and run following commands:
+```dotnet ef database update```
+```dotnet run```
+
+
