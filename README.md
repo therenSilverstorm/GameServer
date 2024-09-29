@@ -68,7 +68,7 @@ To test the WebSocket communication, you can use any WebSocket client (e.g., Pos
 
 Personally I tested everything with Postman, because didn't had enough time to create console application. 
 For your simplicity, I've create few options of testing:
-  1)Postman, but it doesn't support WS collection export feature, so I'm creating "Testing" directory in project, where I save json file with messages payload.
-  2)Insomnia,  API client, which support WS colletions export. The exported collection is in "Testing" directory as well.
-  3)If you'd like, you can test the application from browser dev tools as well.
+- Postman, but it doesn't support WS collection export feature, so I'm creating "Testing" directory in project, where I save json file with messages payload.
+- Insomnia,  API client, which support WS colletions export. The exported collection is in "Testing" directory as well.
+- If you'd like, you can test the application from browser dev tools as well.
 
