@@ -1,6 +1,9 @@
 # GameServer
 This project is a WebSocket-based backend server for handling real-time player interactions like login, resource management, and gift sending. It is built using .NET 8 and SQLite for simplicity, with a focus on scalability and clean architecture.
 
+![image](https://github.com/user-attachments/assets/aaca7b87-123c-4c4d-9c4f-e13a3c5c039e)
+
+
 Key Features
   - Real-time WebSocket communication for player actions.
   - Gift queuing for offline players, with automatic delivery when they log back in.
